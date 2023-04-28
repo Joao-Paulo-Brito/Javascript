@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex007</title>
+    <style>
+        #botão{
+            background-color: rgb(48, 173, 48);
+            text-align: center;
+            padding: 20px;
+            width: 300px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="botão">
+        Clique aqui
+    </div>
+    <script>
+        var a = window.document.getElementById('botão')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {
+            a.innerText = 'Pronto, agora você zueirou o esquema'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = "Se apertar aqui vai zoeirar o esquema"
+            a.style.background = 'aqua'
+        }
+        function sair() {
+            a.innerText = "Égua, já vai ?"
+            a.style.background = 'aqua'
+        }
+    </script>
+</body>
+</html>

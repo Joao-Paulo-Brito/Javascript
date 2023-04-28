@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex011</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Escreva qual é o seu país de origem : </p>
+    <input type="text" id="txt1">
+    <input type="button" value="Executar" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar() {
+            var texto = window.document.getElementById('txt1')
+            var resposta = window.document.getElementById('res')
+            if(texto = 'brasíl'){
+                resposta.innerText = 'Você é brasileiro'
+            }else{
+                resposta.innerText = 'Você é estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>

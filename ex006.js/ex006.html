@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex006</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Escreva o nome do aluno : ")
+        var nota1 = Number(window.prompt("Escreva a nota da primeira avaliação : "))
+        var nota2 = Number(window.prompt("Escreva a nota da segunda avaliação : "))
+        var media = (nota1 + nota2)/2
+            window.alert("A sua nota final foi : " + media)
+            if (media > 7)                          // Condição //
+                document.write(nome + ", Você foi APROVADO")
+            else
+                document.write(nome + ", Você foi REPROVADO")
+    </script>
+</body>
+</html>

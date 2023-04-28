@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex010</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    Velocidade do carro:<input type="number" name="txt1" id="txt1">km/h
+    <input type="button" value="verificar" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar() {
+            var vel = window.document.getElementById('txt1')
+            var res = window.document.getElementById('res')
+            var velocidade = Number(vel.value)
+            res.innerHTML = `Sua velocidade é de ${velocidade}Km/h`
+            if (velocidade > 60) {
+                res.innerText += "Você ultrapassou a velocidade, toma uma multa aí"
+            }else{
+                res.innerText += "Tá tranquilo, tá zueiro"
+            }
+        }
+
+        // DESAFIO !! Criar o ex009 em forma de site //
+    </script>
+</body>
+</html>
