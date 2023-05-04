@@ -16,8 +16,8 @@
         function clicar() {
             var idade = Number(window.document.getElementById('txt1'))
             var resposta = window.document.getElementById('res')
-            if(idade < 18){
-                resposta.innerText = 'Você não pode votar'
+            if(idade < 16){
+                resposta.innerText = 'Não pode votar'
             }else{
                 if(idade >= 16 && idade < 18){
                     resposta.innerText = 'Você pode votar opcionalmente'
