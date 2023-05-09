@@ -4,18 +4,25 @@ function carregar(){
     var agora = new Date()
     var hora = agora.getHours()
     var resposta = window.document.getElementById('res')
-    var img = window.document.querySelector('foto')
+
+    // Imagem
+    var img = document.createElement("img")
+    var src = document.getElementById('foto')
+
     resposta.innerText = `Agora são ${hora} horas`
 
     // Condições
     if(hora < 12){
         alert("Bom dia!")
-        img.src = 'Manhã.png'
+        img.src = 'img/Manhã.png'
+        src.appendChild(img)
     }else if(hora < 18){
         alert("Boa tarde!")
-        img.src = 'tarde.png'
+        img.src = 'img/tarde.png'
+        src.appendChild(img)
     }else{
         alert("Boa noite!")
-        img.src = 'img/noite.png'
+        img.src = "img/noite.png"
+        src.appendChild(img)
     }
 }
