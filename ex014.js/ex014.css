@@ -23,6 +23,13 @@ header{
     padding-top: 15px;
 }
 
+#foto img{
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 20px;
+    border-radius: 150px;
+}
+
 main{
     margin: 20px auto;
     background-color: white;
