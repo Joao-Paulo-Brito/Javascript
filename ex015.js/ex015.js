@@ -94,18 +94,20 @@ function verificar(){
           src.innerHTML = ''
           src.appendChild(img)
      }
-   }
-   if(secreto[0].checked){
-     var papel_de_parede = document.getElementById('papel-de-parede')
-     var formulário = document.getElementById('res')
-     secreto[0].checked = false
-     papel_de_parede.style.backgroundImage = "url('img/coração.jpg')"
-     formulário.style.backgroundColor = '#F5A7E4'
-   }else {
-     var papel_de_parede = document.getElementById('papel-de-parede');
-     var formulário = document.getElementById('res');
-     // Remover os comandos específicos aqui
-     papel_de_parede.style.backgroundImage = "url('img/background.jpg')"
-     formulário.style.backgroundColor = 'white'
+
+     // Secreto
+     if(secreto[0].checked && sexo[1].checked && idade == 17){
+          var papel_de_parede = document.getElementById('papel-de-parede')
+          var formulário = document.getElementById('res')
+          secreto[0].checked = false
+          papel_de_parede.style.backgroundImage = "url('img/coração.jpg')"
+          formulário.style.backgroundColor = '#F5A7E4'
+        }else{
+          var papel_de_parede = document.getElementById('papel-de-parede');
+          var formulário = document.getElementById('res');
+          // Remover os comandos específicos aqui
+          papel_de_parede.style.backgroundImage = "url('img/background.jpg')"
+          formulário.style.backgroundColor = 'white'
+        }
    }
 }
