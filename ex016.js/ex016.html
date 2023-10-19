@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=[device-width], initial-scale=1.0">
+    <title>Contagem</title>
+    <link rel="stylesheet" href="ex016.css">
+</head>
+<body>
+    <script src="ex016.js"></script>
+    <header id="titulo">
+        <h1>Vamos contar</h1>
+    </header>
+    <main id="conteudo">
+        <section>
+            <div  id="formulário">
+                <p>
+                    Inicio:
+                    <input type="number" id="numinicio" name="numinicio" min="0">
+                </p>
+                <p>
+                    Fim:
+                    <input type="number" name="numfim" id="numfim" min="0">
+                </p>
+                <p>
+                    Passo:
+                    <input type="number" name="numpasso" id="numpasso" min="0">
+                </p>
+                <p>
+                    <input type="button" value="Contagem" id="btn" onclick="contar()">
+                </p>
+            </div>
+            <div id="res"></div>
+        </section>
+    </main>
+</body>
+</html>
