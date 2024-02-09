@@ -4,6 +4,9 @@ function multiplicar(){
     var tab = document.getElementById('seltab')
     var multiplicador = 1
 
+    // Apagar operação anterior
+    tab.innerHTML = ''
+
     if(numero.length == 0){
         window.alert('Digite um número')
     }else{
@@ -11,6 +14,7 @@ function multiplicar(){
         for(var multiplicador = 1; multiplicador <= 10; multiplicador++){
             var item = document.createElement('option')
             item.text = `${numero} x ${multiplicador} = ${numero*multiplicador}`
+            item.value = `tab${multiplicador}`
             tab.appendChild(item)
         }
     } 

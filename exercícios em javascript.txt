@@ -1,0 +1,2 @@
+exercícios em javascript:
+https://gustavoguanabara.github.io/javascript/exercicios/
