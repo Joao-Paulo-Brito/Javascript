@@ -70,19 +70,18 @@ function verificar(){
           }else 
           // Jovem
           if(idade > 12 && idade <= 17){
-              // Jovem ou Secreto
-               if (idade == 17 && secreto[0].checked) {
-                    img.src = 'img/sammy.jpg';
-                    gênero = 'princesa💖';
-               } else {
-                    img.src = 'img/mulher-jovem.jpg';
-                    gênero = 'jovem';
-               }
+               img.src = 'img/mulher-jovem.jpg';
+               gênero = 'jovem';
           }else 
           // Adulto
           if(idade > 17 && idade <= 59){
-               img.src = 'img/mulher-adulta.jpg'
-               gênero = 'mulher'
+               if (ano_de_nascimento.value == 2006 && secreto[0].checked) {
+                    img.src = 'img/sammy.jpg';
+                    gênero = 'princesa💖';
+               } else{
+                    img.src = 'img/mulher-adulta.jpg'
+                    gênero = 'mulher'
+               }
           }else
           // Idoso
           if(idade > 60){
@@ -96,7 +95,7 @@ function verificar(){
      }
 
      // Secreto
-     if(secreto[0].checked && sexo[1].checked && idade == 17){
+     if(secreto[0].checked && sexo[1].checked && ano_de_nascimento.value == 2006){
           var papel_de_parede = document.getElementById('papel-de-parede')
           var formulário = document.getElementById('res')
           secreto[0].checked = false
