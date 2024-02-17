@@ -89,6 +89,12 @@ footer{
     border: 1px solid white;
 }
 
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
 /*Responsividade*/
 @media(max-width: 450px){
     #res{

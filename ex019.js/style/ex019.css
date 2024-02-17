@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font1: "Protest Riot", sans-serif;
+    --font2: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(0, 157, 255);
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--font1);
+    text-shadow: 2px 2px 2px black;
+    padding: 30px 0px 30px 0px;
+}
+
+section{
+    margin: 30px auto;
+    background-color: white;
+    padding: 20px;
+    width: 350px;
+    height: 450px;
+    font-family: var(--font2);
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: inset;
+}
+
+section p{
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+#dados{
+    padding: 0px 0px 20px 0px;
+}
+
+#button{
+    padding: 3px;
+    margin-left: 45px;
+    background-color: #1D24CA;
+    color: white;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: 0.4s;
+    border: 1px solid black;
+}
+
+#button2{
+    display: block;
+    margin-left: 120px;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    transition: 0.4s;
+}
+
+#res p{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#button:hover{
+    background-color: #59B4C3;
+}
+
+#button2:hover{
+    background-color: white;
+    color: black;
+}
+
+#button:active, #button2:active{
+    transform: scale(0.9);
+}
+
+#tab{
+    width: 300px;
+}
