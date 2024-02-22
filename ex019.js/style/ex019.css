@@ -29,7 +29,7 @@ section{
     background-color: white;
     padding: 20px;
     width: 350px;
-    height: 450px;
+    height: 480px;
     font-family: var(--font2);
     border-radius: 10px;
     border: 1px solid black;
@@ -68,6 +68,17 @@ section p{
     transition: 0.4s;
 }
 
+#button3{
+    display: block;
+    margin-left: 100px;
+    margin-top: 18px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(164, 22, 22);
+    color: white;
+    transition: 0.4s;
+}
+
 #res p{
     margin-top: 20px;
     font-size: 14px;
@@ -82,7 +93,11 @@ section p{
     color: black;
 }
 
-#button:active, #button2:active{
+#button3:hover{
+    background-color: rgb(252, 72, 72);
+}
+
+#button:active, #button2:active, #button3:active{
     transform: scale(0.9);
 }
 
