@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(114, 114, 255);
+}
+
+header{
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0px 20px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#btn{
+    background-color: aqua;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: 20px 0px 20px 710px;
+}
+
+#resposta{
+    width: 400px;
+    margin: auto;
+}
+
+#usuario{
+    font-size: 22px;
+    color: rgb(1, 217, 255);
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+}
+
+#resposta p{
+    text-align: center;
+    color: white;
+    margin: 20px 0px 20px 0px;
+    line-height: 50px;
+    font-size: 20px;
+}
